@@ -1,0 +1,1560 @@
+{
+  "version": "1.0.0",
+  "created_utc": "2025-09-06T08:02:05.120386+00:00",
+  "random_seed": 15905,
+  "rows": 20480,
+  "params": 8,
+  "metrics": 16,
+  "scenario": [
+    "partial_linear",
+    "partial_nonlinear"
+  ],
+  "scenario_params": {
+    "avg_in_degree": 1
+  },
+  "param_distributions": [
+    {
+      "column": "some_param1",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param2",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param3",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param4",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param5",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param6",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param7",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param8",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    }
+  ],
+  "metric_generators": [
+    {
+      "metric": "some_metric_1",
+      "type": "multiplicative",
+      "inputs": [
+        "some_param1",
+        "some_param3",
+        "some_param6"
+      ],
+      "params": {
+        "alpha": [
+          0.40863865639685226,
+          0.2160374049745768,
+          0.287164700661926
+        ],
+        "delta": 0.1
+      }
+    },
+    {
+      "metric": "some_metric_2",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param3",
+        "some_param4",
+        "some_param6"
+      ],
+      "params": {
+        "A": [
+          1.238706858183406,
+          0.9752304951218683,
+          1.3882130971560387
+        ],
+        "omega": [
+          1.3153629561811147,
+          1.304726275292433,
+          0.9463966745404694
+        ],
+        "phi": [
+          1.7865935495258327,
+          1.3227112652511428,
+          1.4792057331743038
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_3",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -1.1719277612974255
+        ],
+        "bias": -0.23394049756385082
+      }
+    },
+    {
+      "metric": "some_metric_4",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param2",
+        "some_param8",
+        "some_param3",
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          0.31715934725987704,
+          1.3748167908941973,
+          0.6340945609880988,
+          0.3911201435048537
+        ],
+        "bias": 0.2293821663601303
+      }
+    },
+    {
+      "metric": "some_metric_5",
+      "type": "multiplicative",
+      "inputs": [
+        "some_param7",
+        "some_param1",
+        "some_param5"
+      ],
+      "params": {
+        "alpha": [
+          0.9702389823911219,
+          -0.34866281910433594,
+          -0.9883181154809098
+        ],
+        "delta": 0.1
+      }
+    },
+    {
+      "metric": "some_metric_6",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          0.35
+        ],
+        "bias": 0.4190364189286485
+      }
+    },
+    {
+      "metric": "some_metric_7",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": 0.08393242366702047
+      }
+    },
+    {
+      "metric": "some_metric_8",
+      "type": "polynomial",
+      "inputs": [
+        "some_param6",
+        "some_param4",
+        "some_param7"
+      ],
+      "params": {
+        "terms": [
+          {
+            "param": 5,
+            "degree": 2,
+            "coef": -0.22450664496349126
+          },
+          {
+            "param": 5,
+            "degree": 3,
+            "coef": 0.1820303639957766
+          },
+          {
+            "param": 3,
+            "degree": 2,
+            "coef": 0.11617117593788484
+          },
+          {
+            "param": 3,
+            "degree": 3,
+            "coef": -0.07648044227886713
+          },
+          {
+            "param": 6,
+            "degree": 2,
+            "coef": -0.06286739466963276
+          },
+          {
+            "param": 6,
+            "degree": 3,
+            "coef": 0.09155662457385394
+          },
+          {
+            "interaction": [
+              5,
+              3
+            ],
+            "coef": 0.19181509942274522
+          },
+          {
+            "interaction": [
+              5,
+              6
+            ],
+            "coef": 0.026358097721522977
+          },
+          {
+            "interaction": [
+              3,
+              6
+            ],
+            "coef": 0.13550058787290953
+          }
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_9",
+      "type": "linear",
+      "inputs": [
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          1.1702803675737223
+        ],
+        "bias": 0.3691280020112254
+      }
+    },
+    {
+      "metric": "some_metric_10",
+      "type": "linear",
+      "inputs": [
+        "some_param7"
+      ],
+      "params": {
+        "coef": [
+          -0.5333033261898891
+        ],
+        "bias": -0.2179355735315296
+      }
+    },
+    {
+      "metric": "some_metric_11",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          -1.1451475851996682
+        ],
+        "bias": 0.3970697385246723
+      }
+    },
+    {
+      "metric": "some_metric_12",
+      "type": "linear",
+      "inputs": [
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          0.35
+        ],
+        "bias": 0.05599556998322697
+      }
+    },
+    {
+      "metric": "some_metric_13",
+      "type": "linear",
+      "inputs": [
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": -0.19799845591018805
+      }
+    },
+    {
+      "metric": "some_metric_14",
+      "type": "linear",
+      "inputs": [
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          -0.9418079137311921
+        ],
+        "bias": -0.4325637830497153
+      }
+    },
+    {
+      "metric": "some_metric_15",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param2",
+        "some_param4",
+        "some_param6"
+      ],
+      "params": {
+        "A": [
+          0.580480961672883,
+          1.0250939950963494,
+          0.8662048344153959
+        ],
+        "omega": [
+          0.9737386543286559,
+          1.487529529368264,
+          1.0732508323630934
+        ],
+        "phi": [
+          1.7327885701926702,
+          1.0066186683282234,
+          -0.5823882518996966
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_16",
+      "type": "piecewise",
+      "inputs": [
+        "some_param7",
+        "some_param2",
+        "some_param5"
+      ],
+      "params": {
+        "threshold": -0.01788761681644288
+      }
+    }
+  ],
+  "noise_models": {
+    "name": "gaussian",
+    "sigma": 0.01,
+    "nu": null,
+    "b": null,
+    "lambda_h": 0.0
+  },
+  "ground_truth_graph": {
+    "nodes": [
+      "some_param1",
+      "some_param2",
+      "some_param3",
+      "some_param4",
+      "some_param5",
+      "some_param6",
+      "some_param7",
+      "some_param8",
+      "some_metric_1",
+      "some_metric_2",
+      "some_metric_3",
+      "some_metric_4",
+      "some_metric_5",
+      "some_metric_6",
+      "some_metric_7",
+      "some_metric_8",
+      "some_metric_9",
+      "some_metric_10",
+      "some_metric_11",
+      "some_metric_12",
+      "some_metric_13",
+      "some_metric_14",
+      "some_metric_15",
+      "some_metric_16"
+    ],
+    "edges": [
+      {
+        "source": "some_param1",
+        "target": "some_metric_1",
+        "type": "multiplicative",
+        "params": {
+          "alpha": [
+            0.40863865639685226,
+            0.2160374049745768,
+            0.287164700661926
+          ],
+          "delta": 0.1
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_1",
+        "type": "multiplicative",
+        "params": {
+          "alpha": [
+            0.40863865639685226,
+            0.2160374049745768,
+            0.287164700661926
+          ],
+          "delta": 0.1
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_1",
+        "type": "multiplicative",
+        "params": {
+          "alpha": [
+            0.40863865639685226,
+            0.2160374049745768,
+            0.287164700661926
+          ],
+          "delta": 0.1
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_2",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.238706858183406,
+            0.9752304951218683,
+            1.3882130971560387
+          ],
+          "omega": [
+            1.3153629561811147,
+            1.304726275292433,
+            0.9463966745404694
+          ],
+          "phi": [
+            1.7865935495258327,
+            1.3227112652511428,
+            1.4792057331743038
+          ]
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_2",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.238706858183406,
+            0.9752304951218683,
+            1.3882130971560387
+          ],
+          "omega": [
+            1.3153629561811147,
+            1.304726275292433,
+            0.9463966745404694
+          ],
+          "phi": [
+            1.7865935495258327,
+            1.3227112652511428,
+            1.4792057331743038
+          ]
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_2",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.238706858183406,
+            0.9752304951218683,
+            1.3882130971560387
+          ],
+          "omega": [
+            1.3153629561811147,
+            1.304726275292433,
+            0.9463966745404694
+          ],
+          "phi": [
+            1.7865935495258327,
+            1.3227112652511428,
+            1.4792057331743038
+          ]
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_3",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -1.1719277612974255
+          ],
+          "bias": -0.23394049756385082
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_4",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.31715934725987704,
+            1.3748167908941973,
+            0.6340945609880988,
+            0.3911201435048537
+          ],
+          "bias": 0.2293821663601303
+        }
+      },
+      {
+        "source": "some_param8",
+        "target": "some_metric_4",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.31715934725987704,
+            1.3748167908941973,
+            0.6340945609880988,
+            0.3911201435048537
+          ],
+          "bias": 0.2293821663601303
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_4",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.31715934725987704,
+            1.3748167908941973,
+            0.6340945609880988,
+            0.3911201435048537
+          ],
+          "bias": 0.2293821663601303
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_4",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.31715934725987704,
+            1.3748167908941973,
+            0.6340945609880988,
+            0.3911201435048537
+          ],
+          "bias": 0.2293821663601303
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_5",
+        "type": "multiplicative",
+        "params": {
+          "alpha": [
+            0.9702389823911219,
+            -0.34866281910433594,
+            -0.9883181154809098
+          ],
+          "delta": 0.1
+        }
+      },
+      {
+        "source": "some_param1",
+        "target": "some_metric_5",
+        "type": "multiplicative",
+        "params": {
+          "alpha": [
+            0.9702389823911219,
+            -0.34866281910433594,
+            -0.9883181154809098
+          ],
+          "delta": 0.1
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_5",
+        "type": "multiplicative",
+        "params": {
+          "alpha": [
+            0.9702389823911219,
+            -0.34866281910433594,
+            -0.9883181154809098
+          ],
+          "delta": 0.1
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_6",
+        "type": "linear",
+        "params": {
+          "coef": [
+            0.35
+          ],
+          "bias": 0.4190364189286485
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_7",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.35
+          ],
+          "bias": 0.08393242366702047
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_8",
+        "type": "polynomial",
+        "params": {
+          "terms": [
+            {
+              "param": 5,
+              "degree": 2,
+              "coef": -0.22450664496349126
+            },
+            {
+              "param": 5,
+              "degree": 3,
+              "coef": 0.1820303639957766
+            },
+            {
+              "param": 3,
+              "degree": 2,
+              "coef": 0.11617117593788484
+            },
+            {
+              "param": 3,
+              "degree": 3,
+              "coef": -0.07648044227886713
+            },
+            {
+              "param": 6,
+              "degree": 2,
+              "coef": -0.06286739466963276
+            },
+            {
+              "param": 6,
+              "degree": 3,
+              "coef": 0.09155662457385394
+            },
+            {
+              "interaction": [
+                5,
+                3
+              ],
+              "coef": 0.19181509942274522
+            },
+            {
+              "interaction": [
+                5,
+                6
+              ],
+              "coef": 0.026358097721522977
+            },
+            {
+              "interaction": [
+                3,
+                6
+              ],
+              "coef": 0.13550058787290953
+            }
+          ]
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_8",
+        "type": "polynomial",
+        "params": {
+          "terms": [
+            {
+              "param": 5,
+              "degree": 2,
+              "coef": -0.22450664496349126
+            },
+            {
+              "param": 5,
+              "degree": 3,
+              "coef": 0.1820303639957766
+            },
+            {
+              "param": 3,
+              "degree": 2,
+              "coef": 0.11617117593788484
+            },
+            {
+              "param": 3,
+              "degree": 3,
+              "coef": -0.07648044227886713
+            },
+            {
+              "param": 6,
+              "degree": 2,
+              "coef": -0.06286739466963276
+            },
+            {
+              "param": 6,
+              "degree": 3,
+              "coef": 0.09155662457385394
+            },
+            {
+              "interaction": [
+                5,
+                3
+              ],
+              "coef": 0.19181509942274522
+            },
+            {
+              "interaction": [
+                5,
+                6
+              ],
+              "coef": 0.026358097721522977
+            },
+            {
+              "interaction": [
+                3,
+                6
+              ],
+              "coef": 0.13550058787290953
+            }
+          ]
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_8",
+        "type": "polynomial",
+        "params": {
+          "terms": [
+            {
+              "param": 5,
+              "degree": 2,
+              "coef": -0.22450664496349126
+            },
+            {
+              "param": 5,
+              "degree": 3,
+              "coef": 0.1820303639957766
+            },
+            {
+              "param": 3,
+              "degree": 2,
+              "coef": 0.11617117593788484
+            },
+            {
+              "param": 3,
+              "degree": 3,
+              "coef": -0.07648044227886713
+            },
+            {
+              "param": 6,
+              "degree": 2,
+              "coef": -0.06286739466963276
+            },
+            {
+              "param": 6,
+              "degree": 3,
+              "coef": 0.09155662457385394
+            },
+            {
+              "interaction": [
+                5,
+                3
+              ],
+              "coef": 0.19181509942274522
+            },
+            {
+              "interaction": [
+                5,
+                6
+              ],
+              "coef": 0.026358097721522977
+            },
+            {
+              "interaction": [
+                3,
+                6
+              ],
+              "coef": 0.13550058787290953
+            }
+          ]
+        }
+      },
+      {
+        "source": "some_param8",
+        "target": "some_metric_9",
+        "type": "linear",
+        "params": {
+          "coef": [
+            1.1702803675737223
+          ],
+          "bias": 0.3691280020112254
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_10",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.5333033261898891
+          ],
+          "bias": -0.2179355735315296
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_11",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -1.1451475851996682
+          ],
+          "bias": 0.3970697385246723
+        }
+      },
+      {
+        "source": "some_param8",
+        "target": "some_metric_12",
+        "type": "linear",
+        "params": {
+          "coef": [
+            0.35
+          ],
+          "bias": 0.05599556998322697
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_13",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.35
+          ],
+          "bias": -0.19799845591018805
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_14",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.9418079137311921
+          ],
+          "bias": -0.4325637830497153
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_15",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.580480961672883,
+            1.0250939950963494,
+            0.8662048344153959
+          ],
+          "omega": [
+            0.9737386543286559,
+            1.487529529368264,
+            1.0732508323630934
+          ],
+          "phi": [
+            1.7327885701926702,
+            1.0066186683282234,
+            -0.5823882518996966
+          ]
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_15",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.580480961672883,
+            1.0250939950963494,
+            0.8662048344153959
+          ],
+          "omega": [
+            0.9737386543286559,
+            1.487529529368264,
+            1.0732508323630934
+          ],
+          "phi": [
+            1.7327885701926702,
+            1.0066186683282234,
+            -0.5823882518996966
+          ]
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_15",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.580480961672883,
+            1.0250939950963494,
+            0.8662048344153959
+          ],
+          "omega": [
+            0.9737386543286559,
+            1.487529529368264,
+            1.0732508323630934
+          ],
+          "phi": [
+            1.7327885701926702,
+            1.0066186683282234,
+            -0.5823882518996966
+          ]
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_16",
+        "type": "piecewise",
+        "params": {
+          "threshold": -0.01788761681644288
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_16",
+        "type": "piecewise",
+        "params": {
+          "threshold": -0.01788761681644288
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_16",
+        "type": "piecewise",
+        "params": {
+          "threshold": -0.01788761681644288
+        }
+      }
+    ]
+  },
+  "coefficients_or_function_defs": [
+    {
+      "metric": "some_metric_1",
+      "type": "multiplicative",
+      "inputs": [
+        "some_param1",
+        "some_param3",
+        "some_param6"
+      ],
+      "params": {
+        "alpha": [
+          0.40863865639685226,
+          0.2160374049745768,
+          0.287164700661926
+        ],
+        "delta": 0.1
+      }
+    },
+    {
+      "metric": "some_metric_2",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param3",
+        "some_param4",
+        "some_param6"
+      ],
+      "params": {
+        "A": [
+          1.238706858183406,
+          0.9752304951218683,
+          1.3882130971560387
+        ],
+        "omega": [
+          1.3153629561811147,
+          1.304726275292433,
+          0.9463966745404694
+        ],
+        "phi": [
+          1.7865935495258327,
+          1.3227112652511428,
+          1.4792057331743038
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_3",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -1.1719277612974255
+        ],
+        "bias": -0.23394049756385082
+      }
+    },
+    {
+      "metric": "some_metric_4",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param2",
+        "some_param8",
+        "some_param3",
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          0.31715934725987704,
+          1.3748167908941973,
+          0.6340945609880988,
+          0.3911201435048537
+        ],
+        "bias": 0.2293821663601303
+      }
+    },
+    {
+      "metric": "some_metric_5",
+      "type": "multiplicative",
+      "inputs": [
+        "some_param7",
+        "some_param1",
+        "some_param5"
+      ],
+      "params": {
+        "alpha": [
+          0.9702389823911219,
+          -0.34866281910433594,
+          -0.9883181154809098
+        ],
+        "delta": 0.1
+      }
+    },
+    {
+      "metric": "some_metric_6",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          0.35
+        ],
+        "bias": 0.4190364189286485
+      }
+    },
+    {
+      "metric": "some_metric_7",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": 0.08393242366702047
+      }
+    },
+    {
+      "metric": "some_metric_8",
+      "type": "polynomial",
+      "inputs": [
+        "some_param6",
+        "some_param4",
+        "some_param7"
+      ],
+      "params": {
+        "terms": [
+          {
+            "param": 5,
+            "degree": 2,
+            "coef": -0.22450664496349126
+          },
+          {
+            "param": 5,
+            "degree": 3,
+            "coef": 0.1820303639957766
+          },
+          {
+            "param": 3,
+            "degree": 2,
+            "coef": 0.11617117593788484
+          },
+          {
+            "param": 3,
+            "degree": 3,
+            "coef": -0.07648044227886713
+          },
+          {
+            "param": 6,
+            "degree": 2,
+            "coef": -0.06286739466963276
+          },
+          {
+            "param": 6,
+            "degree": 3,
+            "coef": 0.09155662457385394
+          },
+          {
+            "interaction": [
+              5,
+              3
+            ],
+            "coef": 0.19181509942274522
+          },
+          {
+            "interaction": [
+              5,
+              6
+            ],
+            "coef": 0.026358097721522977
+          },
+          {
+            "interaction": [
+              3,
+              6
+            ],
+            "coef": 0.13550058787290953
+          }
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_9",
+      "type": "linear",
+      "inputs": [
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          1.1702803675737223
+        ],
+        "bias": 0.3691280020112254
+      }
+    },
+    {
+      "metric": "some_metric_10",
+      "type": "linear",
+      "inputs": [
+        "some_param7"
+      ],
+      "params": {
+        "coef": [
+          -0.5333033261898891
+        ],
+        "bias": -0.2179355735315296
+      }
+    },
+    {
+      "metric": "some_metric_11",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          -1.1451475851996682
+        ],
+        "bias": 0.3970697385246723
+      }
+    },
+    {
+      "metric": "some_metric_12",
+      "type": "linear",
+      "inputs": [
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          0.35
+        ],
+        "bias": 0.05599556998322697
+      }
+    },
+    {
+      "metric": "some_metric_13",
+      "type": "linear",
+      "inputs": [
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": -0.19799845591018805
+      }
+    },
+    {
+      "metric": "some_metric_14",
+      "type": "linear",
+      "inputs": [
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          -0.9418079137311921
+        ],
+        "bias": -0.4325637830497153
+      }
+    },
+    {
+      "metric": "some_metric_15",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param2",
+        "some_param4",
+        "some_param6"
+      ],
+      "params": {
+        "A": [
+          0.580480961672883,
+          1.0250939950963494,
+          0.8662048344153959
+        ],
+        "omega": [
+          0.9737386543286559,
+          1.487529529368264,
+          1.0732508323630934
+        ],
+        "phi": [
+          1.7327885701926702,
+          1.0066186683282234,
+          -0.5823882518996966
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_16",
+      "type": "piecewise",
+      "inputs": [
+        "some_param7",
+        "some_param2",
+        "some_param5"
+      ],
+      "params": {
+        "threshold": -0.01788761681644288
+      }
+    }
+  ],
+  "validation_summary": {
+    "nan_inf": true,
+    "corr_checks": [
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_3"
+        ],
+        "r_abs": 0.9999625468582535,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_6"
+        ],
+        "r_abs": 0.9995862526559416,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_7"
+        ],
+        "r_abs": 0.9995879466216004,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param8",
+          "some_metric_9"
+        ],
+        "r_abs": 0.9999640756917904,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_10"
+        ],
+        "r_abs": 0.9998195889141329,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_11"
+        ],
+        "r_abs": 0.9999615788148601,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param8",
+          "some_metric_12"
+        ],
+        "r_abs": 0.9995923076155322,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_13"
+        ],
+        "r_abs": 0.9996015042483186,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_14"
+        ],
+        "r_abs": 0.9999449151176928,
+        "ok": true
+      }
+    ],
+    "mi_checks": [
+      {
+        "pair": [
+          "some_param1",
+          "some_metric_1"
+        ],
+        "mi": 0.4185177915092808,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_1"
+        ],
+        "mi": 0.09078445176039907,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_1"
+        ],
+        "mi": 0.18226899201709656,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_2"
+        ],
+        "mi": 0.39598647942054477,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_2"
+        ],
+        "mi": 0.26908121003897545,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_2"
+        ],
+        "mi": 0.2275211890437836,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_4"
+        ],
+        "mi": 0.027674208530660493,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param8",
+          "some_metric_4"
+        ],
+        "mi": 0.6745559360743751,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_4"
+        ],
+        "mi": 0.0855086441246522,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_4"
+        ],
+        "mi": 0.035944669226286585,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_5"
+        ],
+        "mi": 0.33788638291824924,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param1",
+          "some_metric_5"
+        ],
+        "mi": 0.03219922003753428,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_5"
+        ],
+        "mi": 0.3552790088947013,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_8"
+        ],
+        "mi": 0.5275669029317438,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_8"
+        ],
+        "mi": 0.2739081048873375,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_8"
+        ],
+        "mi": 0.2827063196387236,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_15"
+        ],
+        "mi": 0.08850347069098596,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_15"
+        ],
+        "mi": 0.4752070343756589,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_15"
+        ],
+        "mi": 0.4044033785748127,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_16"
+        ],
+        "mi": 0.3110188069165627,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_16"
+        ],
+        "mi": 0.15274138558387662,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_16"
+        ],
+        "mi": 0.18393589042600933,
+        "ok": true
+      }
+    ],
+    "columns_ok": true
+  },
+  "csv_sha256": "c0019a32160c7213582386b8ad9bba9826e68356a20cd4f981e7cb9044fa4f69"
+}

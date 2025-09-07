@@ -1,0 +1,1633 @@
+{
+  "version": "1.0.0",
+  "created_utc": "2025-09-06T08:01:52.134775+00:00",
+  "random_seed": 7982,
+  "rows": 20480,
+  "params": 8,
+  "metrics": 16,
+  "scenario": [
+    "partial_linear",
+    "partial_nonlinear"
+  ],
+  "scenario_params": {
+    "avg_in_degree": 1
+  },
+  "param_distributions": [
+    {
+      "column": "some_param1",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param2",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param3",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param4",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param5",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param6",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param7",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    },
+    {
+      "column": "some_param8",
+      "type": "normal",
+      "mu": 0.0,
+      "sigma": 1.0,
+      "a": null,
+      "b": null,
+      "lam": null,
+      "nu": null
+    }
+  ],
+  "metric_generators": [
+    {
+      "metric": "some_metric_1",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param7",
+        "some_param2",
+        "some_param3"
+      ],
+      "params": {
+        "A": [
+          0.9504655166257847,
+          1.0025501586348553,
+          1.1091597251552314
+        ],
+        "omega": [
+          1.1066442374516712,
+          1.0079904591393518,
+          1.4520582734344363
+        ],
+        "phi": [
+          2.4834768196220462,
+          -2.2173333881005166,
+          0.36916211287688716
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_2",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": -0.3229621365090499
+      }
+    },
+    {
+      "metric": "some_metric_3",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param7",
+        "some_param3",
+        "some_param4"
+      ],
+      "params": {
+        "A": [
+          1.0171718505968943,
+          1.404856785023216,
+          0.593275163806828
+        ],
+        "omega": [
+          0.6225516626733263,
+          1.6765612224149744,
+          1.1103953573736143
+        ],
+        "phi": [
+          -3.1361940360925016,
+          -0.27608704896315395,
+          -2.465688113839635
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_4",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param6",
+        "some_param1",
+        "some_param4"
+      ],
+      "params": {
+        "A": [
+          0.6199102337974908,
+          0.6792538469654944,
+          0.7817850293425858
+        ],
+        "omega": [
+          1.309262093295446,
+          0.9422903255711408,
+          1.568764750882599
+        ],
+        "phi": [
+          -2.6503641614637328,
+          -0.7329081618155824,
+          -2.864289933906289
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_5",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param6",
+        "some_param8",
+        "some_param4",
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -2.1636975404511056,
+          -1.1324345668263145,
+          2.7568979367994864,
+          2.902225558144252
+        ],
+        "bias": -0.6790098696234923
+      }
+    },
+    {
+      "metric": "some_metric_6",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param5",
+        "some_param3",
+        "some_param2"
+      ],
+      "params": {
+        "A": [
+          1.2804833986822755,
+          0.562155193753406,
+          0.6960515892424524
+        ],
+        "omega": [
+          1.4809940518902551,
+          1.4844941661338895,
+          1.7860025139004725
+        ],
+        "phi": [
+          -2.283032023096038,
+          -1.4715463587642452,
+          -0.7680671604111597
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_7",
+      "type": "linear",
+      "inputs": [
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": 0.17920708403471008
+      }
+    },
+    {
+      "metric": "some_metric_8",
+      "type": "piecewise",
+      "inputs": [
+        "some_param2",
+        "some_param7",
+        "some_param4"
+      ],
+      "params": {
+        "threshold": 0.006615753701541067
+      }
+    },
+    {
+      "metric": "some_metric_9",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param3",
+        "some_param5",
+        "some_param1",
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -0.8471016496242827,
+          1.5269719466531546,
+          -2.3462987928648014,
+          0.7070060620686798
+        ],
+        "bias": 0.874149947604054
+      }
+    },
+    {
+      "metric": "some_metric_10",
+      "type": "piecewise",
+      "inputs": [
+        "some_param7",
+        "some_param6",
+        "some_param4"
+      ],
+      "params": {
+        "threshold": 0.00013231332481638305
+      }
+    },
+    {
+      "metric": "some_metric_11",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          0.7768690919370573
+        ],
+        "bias": -0.3955796319088668
+      }
+    },
+    {
+      "metric": "some_metric_12",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param6",
+        "some_param7",
+        "some_param3",
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          0.589449023168922,
+          0.7953333255831421,
+          -1.710900018773002,
+          -2.402699495468428
+        ],
+        "bias": 0.9350014137833971
+      }
+    },
+    {
+      "metric": "some_metric_13",
+      "type": "linear",
+      "inputs": [
+        "some_param7"
+      ],
+      "params": {
+        "coef": [
+          -0.8421770275647813
+        ],
+        "bias": -0.3779177185664271
+      }
+    },
+    {
+      "metric": "some_metric_14",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param1",
+        "some_param7",
+        "some_param3",
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          -2.7968920331817726,
+          -2.5121930625062596,
+          0.8753661633606837,
+          1.4725183340612071
+        ],
+        "bias": 0.37579020907927174
+      }
+    },
+    {
+      "metric": "some_metric_15",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          -1.0384478110905553
+        ],
+        "bias": -0.19512291011983018
+      }
+    },
+    {
+      "metric": "some_metric_16",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": -0.19603592102084422
+      }
+    }
+  ],
+  "noise_models": {
+    "name": "gaussian",
+    "sigma": 0.01,
+    "nu": null,
+    "b": null,
+    "lambda_h": 0.0
+  },
+  "ground_truth_graph": {
+    "nodes": [
+      "some_param1",
+      "some_param2",
+      "some_param3",
+      "some_param4",
+      "some_param5",
+      "some_param6",
+      "some_param7",
+      "some_param8",
+      "some_metric_1",
+      "some_metric_2",
+      "some_metric_3",
+      "some_metric_4",
+      "some_metric_5",
+      "some_metric_6",
+      "some_metric_7",
+      "some_metric_8",
+      "some_metric_9",
+      "some_metric_10",
+      "some_metric_11",
+      "some_metric_12",
+      "some_metric_13",
+      "some_metric_14",
+      "some_metric_15",
+      "some_metric_16"
+    ],
+    "edges": [
+      {
+        "source": "some_param7",
+        "target": "some_metric_1",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.9504655166257847,
+            1.0025501586348553,
+            1.1091597251552314
+          ],
+          "omega": [
+            1.1066442374516712,
+            1.0079904591393518,
+            1.4520582734344363
+          ],
+          "phi": [
+            2.4834768196220462,
+            -2.2173333881005166,
+            0.36916211287688716
+          ]
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_1",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.9504655166257847,
+            1.0025501586348553,
+            1.1091597251552314
+          ],
+          "omega": [
+            1.1066442374516712,
+            1.0079904591393518,
+            1.4520582734344363
+          ],
+          "phi": [
+            2.4834768196220462,
+            -2.2173333881005166,
+            0.36916211287688716
+          ]
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_1",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.9504655166257847,
+            1.0025501586348553,
+            1.1091597251552314
+          ],
+          "omega": [
+            1.1066442374516712,
+            1.0079904591393518,
+            1.4520582734344363
+          ],
+          "phi": [
+            2.4834768196220462,
+            -2.2173333881005166,
+            0.36916211287688716
+          ]
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_2",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.35
+          ],
+          "bias": -0.3229621365090499
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_3",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.0171718505968943,
+            1.404856785023216,
+            0.593275163806828
+          ],
+          "omega": [
+            0.6225516626733263,
+            1.6765612224149744,
+            1.1103953573736143
+          ],
+          "phi": [
+            -3.1361940360925016,
+            -0.27608704896315395,
+            -2.465688113839635
+          ]
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_3",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.0171718505968943,
+            1.404856785023216,
+            0.593275163806828
+          ],
+          "omega": [
+            0.6225516626733263,
+            1.6765612224149744,
+            1.1103953573736143
+          ],
+          "phi": [
+            -3.1361940360925016,
+            -0.27608704896315395,
+            -2.465688113839635
+          ]
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_3",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.0171718505968943,
+            1.404856785023216,
+            0.593275163806828
+          ],
+          "omega": [
+            0.6225516626733263,
+            1.6765612224149744,
+            1.1103953573736143
+          ],
+          "phi": [
+            -3.1361940360925016,
+            -0.27608704896315395,
+            -2.465688113839635
+          ]
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_4",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.6199102337974908,
+            0.6792538469654944,
+            0.7817850293425858
+          ],
+          "omega": [
+            1.309262093295446,
+            0.9422903255711408,
+            1.568764750882599
+          ],
+          "phi": [
+            -2.6503641614637328,
+            -0.7329081618155824,
+            -2.864289933906289
+          ]
+        }
+      },
+      {
+        "source": "some_param1",
+        "target": "some_metric_4",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.6199102337974908,
+            0.6792538469654944,
+            0.7817850293425858
+          ],
+          "omega": [
+            1.309262093295446,
+            0.9422903255711408,
+            1.568764750882599
+          ],
+          "phi": [
+            -2.6503641614637328,
+            -0.7329081618155824,
+            -2.864289933906289
+          ]
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_4",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            0.6199102337974908,
+            0.6792538469654944,
+            0.7817850293425858
+          ],
+          "omega": [
+            1.309262093295446,
+            0.9422903255711408,
+            1.568764750882599
+          ],
+          "phi": [
+            -2.6503641614637328,
+            -0.7329081618155824,
+            -2.864289933906289
+          ]
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_5",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.1636975404511056,
+            -1.1324345668263145,
+            2.7568979367994864,
+            2.902225558144252
+          ],
+          "bias": -0.6790098696234923
+        }
+      },
+      {
+        "source": "some_param8",
+        "target": "some_metric_5",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.1636975404511056,
+            -1.1324345668263145,
+            2.7568979367994864,
+            2.902225558144252
+          ],
+          "bias": -0.6790098696234923
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_5",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.1636975404511056,
+            -1.1324345668263145,
+            2.7568979367994864,
+            2.902225558144252
+          ],
+          "bias": -0.6790098696234923
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_5",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.1636975404511056,
+            -1.1324345668263145,
+            2.7568979367994864,
+            2.902225558144252
+          ],
+          "bias": -0.6790098696234923
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_6",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.2804833986822755,
+            0.562155193753406,
+            0.6960515892424524
+          ],
+          "omega": [
+            1.4809940518902551,
+            1.4844941661338895,
+            1.7860025139004725
+          ],
+          "phi": [
+            -2.283032023096038,
+            -1.4715463587642452,
+            -0.7680671604111597
+          ]
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_6",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.2804833986822755,
+            0.562155193753406,
+            0.6960515892424524
+          ],
+          "omega": [
+            1.4809940518902551,
+            1.4844941661338895,
+            1.7860025139004725
+          ],
+          "phi": [
+            -2.283032023096038,
+            -1.4715463587642452,
+            -0.7680671604111597
+          ]
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_6",
+        "type": "sinusoid",
+        "params": {
+          "A": [
+            1.2804833986822755,
+            0.562155193753406,
+            0.6960515892424524
+          ],
+          "omega": [
+            1.4809940518902551,
+            1.4844941661338895,
+            1.7860025139004725
+          ],
+          "phi": [
+            -2.283032023096038,
+            -1.4715463587642452,
+            -0.7680671604111597
+          ]
+        }
+      },
+      {
+        "source": "some_param8",
+        "target": "some_metric_7",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.35
+          ],
+          "bias": 0.17920708403471008
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_8",
+        "type": "piecewise",
+        "params": {
+          "threshold": 0.006615753701541067
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_8",
+        "type": "piecewise",
+        "params": {
+          "threshold": 0.006615753701541067
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_8",
+        "type": "piecewise",
+        "params": {
+          "threshold": 0.006615753701541067
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_9",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -0.8471016496242827,
+            1.5269719466531546,
+            -2.3462987928648014,
+            0.7070060620686798
+          ],
+          "bias": 0.874149947604054
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_9",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -0.8471016496242827,
+            1.5269719466531546,
+            -2.3462987928648014,
+            0.7070060620686798
+          ],
+          "bias": 0.874149947604054
+        }
+      },
+      {
+        "source": "some_param1",
+        "target": "some_metric_9",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -0.8471016496242827,
+            1.5269719466531546,
+            -2.3462987928648014,
+            0.7070060620686798
+          ],
+          "bias": 0.874149947604054
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_9",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -0.8471016496242827,
+            1.5269719466531546,
+            -2.3462987928648014,
+            0.7070060620686798
+          ],
+          "bias": 0.874149947604054
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_10",
+        "type": "piecewise",
+        "params": {
+          "threshold": 0.00013231332481638305
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_10",
+        "type": "piecewise",
+        "params": {
+          "threshold": 0.00013231332481638305
+        }
+      },
+      {
+        "source": "some_param4",
+        "target": "some_metric_10",
+        "type": "piecewise",
+        "params": {
+          "threshold": 0.00013231332481638305
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_11",
+        "type": "linear",
+        "params": {
+          "coef": [
+            0.7768690919370573
+          ],
+          "bias": -0.3955796319088668
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_12",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.589449023168922,
+            0.7953333255831421,
+            -1.710900018773002,
+            -2.402699495468428
+          ],
+          "bias": 0.9350014137833971
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_12",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.589449023168922,
+            0.7953333255831421,
+            -1.710900018773002,
+            -2.402699495468428
+          ],
+          "bias": 0.9350014137833971
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_12",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.589449023168922,
+            0.7953333255831421,
+            -1.710900018773002,
+            -2.402699495468428
+          ],
+          "bias": 0.9350014137833971
+        }
+      },
+      {
+        "source": "some_param8",
+        "target": "some_metric_12",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            0.589449023168922,
+            0.7953333255831421,
+            -1.710900018773002,
+            -2.402699495468428
+          ],
+          "bias": 0.9350014137833971
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_13",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.8421770275647813
+          ],
+          "bias": -0.3779177185664271
+        }
+      },
+      {
+        "source": "some_param1",
+        "target": "some_metric_14",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.7968920331817726,
+            -2.5121930625062596,
+            0.8753661633606837,
+            1.4725183340612071
+          ],
+          "bias": 0.37579020907927174
+        }
+      },
+      {
+        "source": "some_param7",
+        "target": "some_metric_14",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.7968920331817726,
+            -2.5121930625062596,
+            0.8753661633606837,
+            1.4725183340612071
+          ],
+          "bias": 0.37579020907927174
+        }
+      },
+      {
+        "source": "some_param3",
+        "target": "some_metric_14",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.7968920331817726,
+            -2.5121930625062596,
+            0.8753661633606837,
+            1.4725183340612071
+          ],
+          "bias": 0.37579020907927174
+        }
+      },
+      {
+        "source": "some_param5",
+        "target": "some_metric_14",
+        "type": "sigmoid",
+        "params": {
+          "coef": [
+            -2.7968920331817726,
+            -2.5121930625062596,
+            0.8753661633606837,
+            1.4725183340612071
+          ],
+          "bias": 0.37579020907927174
+        }
+      },
+      {
+        "source": "some_param6",
+        "target": "some_metric_15",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -1.0384478110905553
+          ],
+          "bias": -0.19512291011983018
+        }
+      },
+      {
+        "source": "some_param2",
+        "target": "some_metric_16",
+        "type": "linear",
+        "params": {
+          "coef": [
+            -0.35
+          ],
+          "bias": -0.19603592102084422
+        }
+      }
+    ]
+  },
+  "coefficients_or_function_defs": [
+    {
+      "metric": "some_metric_1",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param7",
+        "some_param2",
+        "some_param3"
+      ],
+      "params": {
+        "A": [
+          0.9504655166257847,
+          1.0025501586348553,
+          1.1091597251552314
+        ],
+        "omega": [
+          1.1066442374516712,
+          1.0079904591393518,
+          1.4520582734344363
+        ],
+        "phi": [
+          2.4834768196220462,
+          -2.2173333881005166,
+          0.36916211287688716
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_2",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": -0.3229621365090499
+      }
+    },
+    {
+      "metric": "some_metric_3",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param7",
+        "some_param3",
+        "some_param4"
+      ],
+      "params": {
+        "A": [
+          1.0171718505968943,
+          1.404856785023216,
+          0.593275163806828
+        ],
+        "omega": [
+          0.6225516626733263,
+          1.6765612224149744,
+          1.1103953573736143
+        ],
+        "phi": [
+          -3.1361940360925016,
+          -0.27608704896315395,
+          -2.465688113839635
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_4",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param6",
+        "some_param1",
+        "some_param4"
+      ],
+      "params": {
+        "A": [
+          0.6199102337974908,
+          0.6792538469654944,
+          0.7817850293425858
+        ],
+        "omega": [
+          1.309262093295446,
+          0.9422903255711408,
+          1.568764750882599
+        ],
+        "phi": [
+          -2.6503641614637328,
+          -0.7329081618155824,
+          -2.864289933906289
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_5",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param6",
+        "some_param8",
+        "some_param4",
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -2.1636975404511056,
+          -1.1324345668263145,
+          2.7568979367994864,
+          2.902225558144252
+        ],
+        "bias": -0.6790098696234923
+      }
+    },
+    {
+      "metric": "some_metric_6",
+      "type": "sinusoid",
+      "inputs": [
+        "some_param5",
+        "some_param3",
+        "some_param2"
+      ],
+      "params": {
+        "A": [
+          1.2804833986822755,
+          0.562155193753406,
+          0.6960515892424524
+        ],
+        "omega": [
+          1.4809940518902551,
+          1.4844941661338895,
+          1.7860025139004725
+        ],
+        "phi": [
+          -2.283032023096038,
+          -1.4715463587642452,
+          -0.7680671604111597
+        ]
+      }
+    },
+    {
+      "metric": "some_metric_7",
+      "type": "linear",
+      "inputs": [
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": 0.17920708403471008
+      }
+    },
+    {
+      "metric": "some_metric_8",
+      "type": "piecewise",
+      "inputs": [
+        "some_param2",
+        "some_param7",
+        "some_param4"
+      ],
+      "params": {
+        "threshold": 0.006615753701541067
+      }
+    },
+    {
+      "metric": "some_metric_9",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param3",
+        "some_param5",
+        "some_param1",
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -0.8471016496242827,
+          1.5269719466531546,
+          -2.3462987928648014,
+          0.7070060620686798
+        ],
+        "bias": 0.874149947604054
+      }
+    },
+    {
+      "metric": "some_metric_10",
+      "type": "piecewise",
+      "inputs": [
+        "some_param7",
+        "some_param6",
+        "some_param4"
+      ],
+      "params": {
+        "threshold": 0.00013231332481638305
+      }
+    },
+    {
+      "metric": "some_metric_11",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          0.7768690919370573
+        ],
+        "bias": -0.3955796319088668
+      }
+    },
+    {
+      "metric": "some_metric_12",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param6",
+        "some_param7",
+        "some_param3",
+        "some_param8"
+      ],
+      "params": {
+        "coef": [
+          0.589449023168922,
+          0.7953333255831421,
+          -1.710900018773002,
+          -2.402699495468428
+        ],
+        "bias": 0.9350014137833971
+      }
+    },
+    {
+      "metric": "some_metric_13",
+      "type": "linear",
+      "inputs": [
+        "some_param7"
+      ],
+      "params": {
+        "coef": [
+          -0.8421770275647813
+        ],
+        "bias": -0.3779177185664271
+      }
+    },
+    {
+      "metric": "some_metric_14",
+      "type": "sigmoid",
+      "inputs": [
+        "some_param1",
+        "some_param7",
+        "some_param3",
+        "some_param5"
+      ],
+      "params": {
+        "coef": [
+          -2.7968920331817726,
+          -2.5121930625062596,
+          0.8753661633606837,
+          1.4725183340612071
+        ],
+        "bias": 0.37579020907927174
+      }
+    },
+    {
+      "metric": "some_metric_15",
+      "type": "linear",
+      "inputs": [
+        "some_param6"
+      ],
+      "params": {
+        "coef": [
+          -1.0384478110905553
+        ],
+        "bias": -0.19512291011983018
+      }
+    },
+    {
+      "metric": "some_metric_16",
+      "type": "linear",
+      "inputs": [
+        "some_param2"
+      ],
+      "params": {
+        "coef": [
+          -0.35
+        ],
+        "bias": -0.19603592102084422
+      }
+    }
+  ],
+  "validation_summary": {
+    "nan_inf": true,
+    "corr_checks": [
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_2"
+        ],
+        "r_abs": 0.9995879357042696,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param8",
+          "some_metric_7"
+        ],
+        "r_abs": 0.9995976266739601,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_11"
+        ],
+        "r_abs": 0.9999164504210868,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_13"
+        ],
+        "r_abs": 0.9999282562865973,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_15"
+        ],
+        "r_abs": 0.999953774118979,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_16"
+        ],
+        "r_abs": 0.9995890123260203,
+        "ok": true
+      }
+    ],
+    "mi_checks": [
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_1"
+        ],
+        "mi": 0.2305595888953258,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_1"
+        ],
+        "mi": 0.22746075758036977,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_1"
+        ],
+        "mi": 0.37568225061297245,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_3"
+        ],
+        "mi": 0.22920649693656703,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_3"
+        ],
+        "mi": 0.5956813141051116,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_3"
+        ],
+        "mi": 0.07516188620118491,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_4"
+        ],
+        "mi": 0.24199254412208937,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param1",
+          "some_metric_4"
+        ],
+        "mi": 0.18160464903317663,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_4"
+        ],
+        "mi": 0.4078493026930188,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_5"
+        ],
+        "mi": 0.10407165847705357,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param8",
+          "some_metric_5"
+        ],
+        "mi": 0.034216110465570715,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_5"
+        ],
+        "mi": 0.18861580939956113,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_5"
+        ],
+        "mi": 0.21843581211296925,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_6"
+        ],
+        "mi": 0.58797492738295,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_6"
+        ],
+        "mi": 0.12108971518957024,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_6"
+        ],
+        "mi": 0.22767174131358114,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_8"
+        ],
+        "mi": 0.36197707032316107,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_8"
+        ],
+        "mi": 0.014389178966924376,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_8"
+        ],
+        "mi": 0.45241772040410577,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_9"
+        ],
+        "mi": 0.036555234817067905,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_9"
+        ],
+        "mi": 0.15214660425912552,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param1",
+          "some_metric_9"
+        ],
+        "mi": 0.4362852037887093,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param2",
+          "some_metric_9"
+        ],
+        "mi": 0.02852544795769152,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_10"
+        ],
+        "mi": 0.283956281587769,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_10"
+        ],
+        "mi": 0.07580913160829628,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param4",
+          "some_metric_10"
+        ],
+        "mi": 0.30252845612671475,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param6",
+          "some_metric_12"
+        ],
+        "mi": 0.014346209413103495,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_12"
+        ],
+        "mi": 0.03369106759148366,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_12"
+        ],
+        "mi": 0.17050165059525302,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param8",
+          "some_metric_12"
+        ],
+        "mi": 0.4254883110540346,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param1",
+          "some_metric_14"
+        ],
+        "mi": 0.28307121920164935,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param7",
+          "some_metric_14"
+        ],
+        "mi": 0.2172430422740117,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param3",
+          "some_metric_14"
+        ],
+        "mi": 0.02220759477275447,
+        "ok": true
+      },
+      {
+        "pair": [
+          "some_param5",
+          "some_metric_14"
+        ],
+        "mi": 0.061300672949138324,
+        "ok": true
+      }
+    ],
+    "columns_ok": true
+  },
+  "csv_sha256": "492957921cd314623397861d5b4b01e5dcb27575ffe5071632bbdd96e9a9aa02"
+}
